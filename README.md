@@ -26,3 +26,11 @@
 ![improper token](https://media.discordapp.net/attachments/1128720966575464488/1157403387571216384/Screenshot_32.png?ex=65187b67&is=651729e7&hm=bdebd0250553c806c2dcadc566b6d43feb8546c6edd143e33a00aa42b64ea44a&= "improper token")
 
 Esse erro acontece quando o token que voce colocou no secret **token** esta invalido.
+## Como o bot identifica o pokemon?
+#### o Bot utiliza as bibliotecas os e pillow para identificar se uma imagem e igual a outra utilizando a seguinte logica:
+- Primeiro ele faz o download da imagem
+- ele pega uma lista de todos os arquivos da pasta "data/image"
+- filtra todos os arquivos com a extençao .png
+- vai em cada arquivo da pasta "data/image" verificando se ele e igual a imagem que ele fez o download
+- e se for ele ira remover o .png e ira enviar @poketwo c {nome_da_imagem_identificada}
+- se ele nao encontrar nenhuma imagem igual ele nao ira fazer nada
