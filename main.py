@@ -108,9 +108,6 @@ async def stop(ctx):
         await ctx.send('Bot stopped.')
     else:
         await ctx.send('Bot is already stopped.')
-# Token do seu bot (acessado pela variável de ambiente) 
-keep_alive.keep_alive()
-try:
+if __name__ == '__main__':
+    keep_alive.keep_alive()
     bot.run(token) 
-except discord.LoginFailure:
-    print('Token invalido')
