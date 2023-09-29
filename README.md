@@ -4,14 +4,17 @@
   
 [![token secret](https://media.discordapp.net/attachments/1128720966575464488/1157394734155825222/Screenshot_28.png?ex=65187357&is=651721d7&hm=6cceb52023bb3448cef0a850f95a7d4cfed7b981ef434c499d02f5f9d55dcd14&= "token secret")](https://media.discordapp.net/attachments/1128720966575464488/1157394734155825222/Screenshot_28.png?ex=65187357&is=651721d7&hm=6cceb52023bb3448cef0a850f95a7d4cfed7b981ef434c499d02f5f9d55dcd14&= "token secret")
 
+
 - Agora Voce pode comecar a criar os chats em que o bot ira pegar o sh, o limite maximo de chats e 100. Voce deve criar os secrets **catch_id{numero}** o **{numero}** pode ser de um a 100 aqui vai um exemplo de **"catch_id"**
   
 [![catch_ids](https://media.discordapp.net/attachments/1128720966575464488/1157395931226964151/Screenshot_29.png?ex=65187475&is=651722f5&hm=cf5c36a21ac404abbebaf6956d8f543a6df0dd5740eedb5eb2b6ca1a7be2b48b&= "catch_ids")](https://media.discordapp.net/attachments/1128720966575464488/1157395931226964151/Screenshot_29.png?ex=65187475&is=651722f5&hm=cf5c36a21ac404abbebaf6956d8f543a6df0dd5740eedb5eb2b6ca1a7be2b48b&=// "catch_ids")
+
 
 - Colocar a imagem do shinyHunt na pasta **"data/image"** 
 **Atençao: Nunca enviar imagens repetidas! e o nome da imagem tem que ser o nome do pokemon**
 
 [![diretorio](https://media.discordapp.net/attachments/1128720966575464488/1157398116891373608/Screenshot_31.png?ex=6518767e&is=651724fe&hm=f69247b02a3de32e10be178f2f8b2e80855ab46fc9ff7a4074249568cd264d44&= "diretorio")](https://media.discordapp.net/attachments/1128720966575464488/1157398116891373608/Screenshot_31.png?ex=6518767e&is=651724fe&hm=f69247b02a3de32e10be178f2f8b2e80855ab46fc9ff7a4074249568cd264d44&= "diretorio")
+
 
 - ultimo passo ligar [**ctrl + enter** ou clique no botao **run**]
 
