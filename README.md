@@ -8,7 +8,7 @@
   
 [![catch_ids](https://media.discordapp.net/attachments/1128720966575464488/1157395931226964151/Screenshot_29.png?ex=65187475&is=651722f5&hm=cf5c36a21ac404abbebaf6956d8f543a6df0dd5740eedb5eb2b6ca1a7be2b48b&= "catch_ids")](https://media.discordapp.net/attachments/1128720966575464488/1157395931226964151/Screenshot_29.png?ex=65187475&is=651722f5&hm=cf5c36a21ac404abbebaf6956d8f543a6df0dd5740eedb5eb2b6ca1a7be2b48b&=// "catch_ids")
 
-- Colocar a imagem do shinyHunt na pasta **data/image** 
+- Colocar a imagem do shinyHunt na pasta **"data/image"** 
 **Atençao: Nunca enviar imagens repetidas! e o nome da imagem tem que ser o nome do pokemon**
 
 [![diretorio](https://media.discordapp.net/attachments/1128720966575464488/1157398116891373608/Screenshot_31.png?ex=6518767e&is=651724fe&hm=f69247b02a3de32e10be178f2f8b2e80855ab46fc9ff7a4074249568cd264d44&= "diretorio")](https://media.discordapp.net/attachments/1128720966575464488/1157398116891373608/Screenshot_31.png?ex=6518767e&is=651724fe&hm=f69247b02a3de32e10be178f2f8b2e80855ab46fc9ff7a4074249568cd264d44&= "diretorio")
