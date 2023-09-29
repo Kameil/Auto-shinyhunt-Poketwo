@@ -21,4 +21,5 @@
 - discord.LoginFailure
 
 ![improper token](https://media.discordapp.net/attachments/1128720966575464488/1157403387571216384/Screenshot_32.png?ex=65187b67&is=651729e7&hm=bdebd0250553c806c2dcadc566b6d43feb8546c6edd143e33a00aa42b64ea44a&= "improper token")
+
 Esse erro acontece quando o token que voce colocou no secret **token** esta invalido.
