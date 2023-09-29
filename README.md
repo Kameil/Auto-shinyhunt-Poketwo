@@ -21,18 +21,18 @@
 [![run](https://media.discordapp.net/attachments/1128720966575464488/1157396500146556958/Screenshot_30.png?ex=651874fd&is=6517237d&hm=42ab2e29b4b4fbc31b0c00acd313aeebd83bbba0fb88d479769f8c70969bd472&= "run")](https://media.discordapp.net/attachments/1128720966575464488/1157396500146556958/Screenshot_30.png?ex=651874fd&is=6517237d&hm=42ab2e29b4b4fbc31b0c00acd313aeebd83bbba0fb88d479769f8c70969bd472&= "run")
 
 ## Erros comuns
-- discord.LoginFailure
+#### discord.LoginFailure
 
 ![improper token](https://media.discordapp.net/attachments/1128720966575464488/1157403387571216384/Screenshot_32.png?ex=65187b67&is=651729e7&hm=bdebd0250553c806c2dcadc566b6d43feb8546c6edd143e33a00aa42b64ea44a&= "improper token")
 
-Esse erro acontece quando o token que voce colocou no secret **token** esta invalido.
+- Esse erro acontece quando o token que voce colocou no secret **token** esta invalido.
 
 
-- Intents
+#### Intents
 
 ![missing intents](https://media.discordapp.net/attachments/1128720966575464488/1157462172851507271/Screenshot_35.png?ex=6518b226&is=651760a6&hm=ba6d37febb6a8754c246bd8bb030f16ddaa509d462e0ba6264ff4e25a96acc69&= "missing intents")
 
-Esse erro acontece quando a biblioteca discord.py se sobrepoe a discord.py-self para resolver e so executar o comando: **pip uninstall discord.py-self && pip install discord.py-self==2.0.0**
+- Esse erro acontece quando a biblioteca discord.py se sobrepoe a discord.py-self para resolver e so executar o comando: **pip uninstall discord.py-self && pip install discord.py-self==2.0.0**
 
 
 ## Como o bot identifica o pokemon?
