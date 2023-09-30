@@ -1,4 +1,5 @@
 aiohttp
+discord.py
 discord.py-self==2.0.0
 aiofiles
 pillow
