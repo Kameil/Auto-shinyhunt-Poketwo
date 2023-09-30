@@ -1,4 +1,6 @@
 # Auto shiny Hunt Poketwo 🎟
+- https://replit.com/@Raquison/Auto-shinyhunt-Poketwo#main.py
+
 ## Como usar?
 - Primeiro Voce deve Criar o secret **"token"**
   
