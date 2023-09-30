@@ -6,15 +6,7 @@ from PIL import Image, ImageEnhance
 
 
 catch_id = []
-for i in range(101):
-    try:
-        numero = str(i)
-        if numero == '0':
-            catch_id.append(str(os.environ['catch_id']))
-        else:
-            catch_id.append(str(os.environ[f'catch_id{numero}']))
-    except KeyError:
-        pass
+
 
 
 poketwo, pokename, paused, token = '716390085896962058', '0', False, os.environ['token']
@@ -23,16 +15,40 @@ unidentified_image = 'original_image.png'
 
 bot = commands.Bot(command_prefix='.', self_bot=True, help_command=None)
 
+async def carregar_catch_ids():
+    global catch_id
+    print('carregando catch_ids')
+    for i in range(101):
+        try:
+            numero = str(i)
+            if numero == '0':
+                canal = bot.get_channel(int(os.environ['catch_id']))
+                if canal:
+                    catch_id.append(str(os.environ['catch_id']))
+                else:
+                    print('Nao foi possivel obter o canal do secret "catch_id" Verifique o id.')
+            else:
+                canal = bot.get_channel(int(os.environ[f'catch_id{numero}']))
+                if canal:
+                    catch_id.append(str(os.environ[f'catch_id{numero}']))
+                else:
+                    print(f'Nao foi possivel obter o canal do secret "catch_id{numero}" Verifique o id.')
+        except KeyError:
+            pass
+    print(f'{len(catch_id)} Catch_ids Foram carregados.')
+
 @bot.event
 async def on_ready():
-    print(f'Bot conectado como {bot.user}') 
+    print(f'Bot conectado como {bot.user}')
+    await carregar_catch_ids()
+
 
 @bot.event
 async def on_message(message):
     global pokename
     global buscar_unidentified_image
     pokename = int(pokename)
-    if message.author.id == 874910942490677270 and str(message.channel.id) in catch_id:
+    if message.author.id == 874910942490677270 and str(message.channel.id) in catch_id and not paused:
         if len(message.embeds) > 0:
             embed = message.embeds[0]
             if embed.image:
@@ -46,9 +62,8 @@ async def on_message(message):
                         else:
                             raise
                 await buscar_unidentified_image(message.channel)
-    if not message.author.bot:
-        if str(message.channel.id) == catch_id:
-            await bot.process_commands(message)
+    if not message.author.bot and str(message.channel.id) in catch_id:
+        await bot.process_commands(message)
 
 
 async def buscar_unidentified_image(channel):
@@ -79,17 +94,6 @@ def compare_images(image_path1, image_path2):
     image1 = Image.open(image_path1)
     image2 = Image.open(image_path2)
     return image1 == image2
-
-
-
-@bot.command()
-async def oping(ctx):
-    bot_ping = bot.latency * 1000  # Convertendo de segundos para milissegundos
-    if bot_ping <= 300:
-        await ctx.send(f'ping do autosh é: {bot_ping:.2f}ms :green_circle:')
-    else:
-        await ctx.send(f'ping do autosh è: {bot_ping:.2f}ms :red_circle:')
-    print('Comando !ping executado')
 
 @bot.command()
 async def start(ctx):
